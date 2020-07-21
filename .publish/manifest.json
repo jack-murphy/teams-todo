@@ -1,0 +1,52 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "{version}",
+    "showLoadingIndicator": true,
+    "isFullScreen": true,
+    "id": "5a4d53a2-232d-4c89-8de1-8fb1d18e1203",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Jack Murphy",
+        "websiteUrl": "{baseUrl0}/jack-murphy",
+        "privacyUrl": "{baseUrl1}/en-us/servicesagreement",
+        "termsOfUseUrl": "{baseUrl1}/en-us/servicesagreement"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "{appname}",
+        "full": "{fullappname}"
+    },
+    "description": {
+        "short": "Microsoft To Do",
+        "full": "Manage your to do tasks in Microsoft teams"
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "jm_mytodos",
+            "name": "My To Dos",
+            "contentUrl": "{baseUrl2}/tasks",
+            "websiteUrl": "{baseUrl2}",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "index",
+            "name": "Personal Tab",
+            "contentUrl": "{baseUrl3}/tab",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
